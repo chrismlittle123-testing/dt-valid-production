@@ -1,0 +1,9 @@
+{
+  "name": "dt-valid-production",
+  "version": "1.0.0",
+  "description": "E2E test repo",
+  "scripts": {
+    "lint": "echo 'Lint passed'",
+    "test": "echo 'Tests passed'"
+  }
+}
