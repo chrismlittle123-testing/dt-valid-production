@@ -1,0 +1,21 @@
+schema:
+  tiers: [production, internal, prototype]
+
+integrity:
+  protected:
+    - file: CODEOWNERS
+      severity: high
+    - file: LICENSE
+      severity: medium
+    - file: README.md
+      severity: low
+
+scans:
+  - name: has-readme
+    description: Check for README file
+    command: test -f README.md
+    severity: low
+  - name: has-standards-toml
+    description: Check for standards.toml
+    command: test -f standards.toml
+    severity: medium
